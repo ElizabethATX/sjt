@@ -125,17 +125,17 @@
                 <img src="recursos/img/c2.jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                    <img src="recursos/img/c3.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="recursos/img/c4.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="recursos/img/c5.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="recursos/img/c6.jpg" class="d-block w-100" alt="...">
-                </div>
+                <img src="recursos/img/c3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="recursos/img/c4.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="recursos/img/c5.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="recursos/img/c6.jpg" class="d-block w-100" alt="...">
+            </div>
         </div>
     </div>
 </div>
@@ -403,6 +403,56 @@
             });
         });
     </script>
+
+
+<script>
+    var canvas = document.createElement('canvas');
+    var ctx = canvas.getContext('2d');
+    var particles = [];
+    var particleCount = 30;
+    var particleSpeed = 2;
+
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    document.body.appendChild(canvas);
+
+    function random(min, max) {
+        return Math.random() * (max - min) + min;
+    }
+
+    function createParticle() {
+        var particle = {
+            x: canvas.width / 2,
+            y: canvas.height / 2,
+            vx: random(-particleSpeed, particleSpeed),
+            vy: random(-particleSpeed, particleSpeed),
+            size: random(1, 3),
+            color: 'hsl(' + random(0, 360) + ', 100%, 50%)'
+        };
+        particles.push(particle);
+    }
+
+    function update() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        for (var i = 0; i < particles.length; i++) {
+            var p = particles[i];
+            p.x += p.vx;
+            p.y += p.vy;
+            ctx.fillStyle = p.color;
+            ctx.fillRect(p.x, p.y, p.size, p.size);
+        }
+    }
+
+    function loop() {
+        if (particles.length < particleCount) {
+            createParticle();
+        }
+        update();
+        requestAnimationFrame(loop);
+    }
+
+    loop();
+</script>
 </body>
 
 </html>
