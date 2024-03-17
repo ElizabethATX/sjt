@@ -11,7 +11,7 @@
  <meta name="copyright" content="&copy;2023 SchoolWeb.">
     
     <title>Colegio Técnico San Judas Tadeo</title>
-    <link rel="icon" type="image/png" href="https://www.websanjudas.com/images/logo.png">
+    <link rel="icon" type="image/png" href="recursos/img/logo2.png">
     <!-- Bootstrap CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     
@@ -26,6 +26,9 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     
     <style>
         
@@ -289,6 +292,75 @@ max-height: 64px;
         .todo1{
             width: 100%;
         }
+        
+
+        
+        .animate__slideInRight {
+    animation: animate__slideInRight 1s forwards;
+}
+
+@keyframes animate__slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+        .animate__zoomIn {
+    animation: animate__zoomIn 1s forwards;
+}
+
+@keyframes animate__zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease; 
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+        
+.card-body {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: box-shadow 0.3s ease; 
+}
+
+.card-body:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+        
+.btn-ccc {
+    background-color: rgb(51 0 14) !important;
+    border-color: #000; 
+    color: #fff; 
+}
+
+.btn-ccc:hover {
+    background-color: rgb(41 13 21) !important; 
+    border-color: #000; 
+    color: #fff;
+}
+hr {
+    border-top: 8px solid rgb(41 13 21); 
+    margin: 20px 0; 
+}
+
+
     </style>
 </head>
 
@@ -340,22 +412,23 @@ max-height: 64px;
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#" onclick="closeNavbar()">Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="#" onclick="closeNavbar()"><i class="fas fa-home"></i> Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" onclick="closeNavbar()">Institución</a>
+                            <a class="nav-link" href="#" onclick="closeNavbar()"><i class="fas fa-school"></i> Institución</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" onclick="closeNavbar()">Oferta Educativa</a>
+                            <a class="nav-link" href="#" onclick="closeNavbar()"><i class="fas fa-graduation-cap"></i> Oferta Educativa</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" onclick="closeNavbar()">Actividades</a>
+                            <a class="nav-link" href="#" onclick="closeNavbar()"><i class="fas fa-calendar-alt"></i> Actividades</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" onclick="closeNavbar()">Contactos</a>
+                            <a class="nav-link" href="#" onclick="closeNavbar()"><i class="fas fa-address-book"></i> Contactos</a>
                         </li>
                     </ul>
                 </div>
+
             </div>
         </nav>
     </div>
@@ -398,76 +471,69 @@ max-height: 64px;
 
 
 <div class="row p-4" id="bienvenidos">
-  
     <div class="col-md-12">
-        <img id="robot" src="https://www.websanjudas.com/images/robotiz.png" >
-        <img id="rob2" src="ihttps://www.websanjudas.com/mages/robotiz3.png" >
+        <img id="robot" src="recursos/img/robotiz.png">
+        <img id="rob2" src="recursos/img/robotiz3.png">
         <div class="alert alert-primary" role="alert" id="bienv">
-            
-        <h3>¡Bienvenidos!</h3>
-        <p>Nosotros, como Unidad Educativa formando Bachilleres Técnicos, tomamos en cuenta los intereses socio-económicos del sector, apoyados en un proceso educativo innovador, consideramos son motivos suficientes para sentirnos orgullosos de nuestros logros en el campo educacional y formativo de la juventud que por varios años han pasado por nuestras aulas. Jugamos un rol importante en la conducción de elementos humanos que están bajo nuestra responsabilidad y aseguramos la calidad de la enseñanza que consideramos es una retribución al grado de confianza brindada por las madres, padres de familia y representantes.</p>
-            
+            <h3 align="center"><b>¡Bienvenidos!</b></h3>
+            <p>Como Unidad Educativa, formamos Bachilleres Técnicos con atención a los intereses socioeconómicos del sector. Nuestro enfoque innovador en el proceso educativo nos llena de orgullo por los logros alcanzados en la formación de la juventud que ha pasado por nuestras aulas.
+                Jugamos un papel crucial en la dirección de los elementos humanos bajo nuestra responsabilidad y garantizamos la calidad educativa como muestra de gratitud por la confianza depositada por padres y representantes.</p>
         </div>
     </div>
 </div>
 
-    
-    <div class="container mt-4">
+
+
+  <div class="container-fluid mt-4">
     <!-- Card de fondo -->
-    <div class="card bg-primary text-white w-100">
+    <div class="card bg-primary text-white">
         <div class="card-body">
-            <h3 class="card-title" style="text-align: center" >Oferta Educativa</h3>
+            <h3 class="card-title" style="text-align: center"><i class="fas fa-graduation-cap"></i> Oferta Educativa <i class="fas fa-graduation-cap"></i></h3>
             <h6 class="card-text" style="text-align: center">La educación es la llave que abre todas las puertas del conocimiento.</h6>
-        
-    
+        </div>
+    </div>
 
     <!-- Cards con imagen, información y botón -->
-    <div class="container mt-4 w-100">
-    <div class="row mt-4" >
-        <div class="col-md-4">
-            <div class="card">
-                <div class="card-content">
+    <div class="container mt-4">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card shadow h-100">
                     <img src="recursos/img/ca3.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Educación Básica Superior</h5>
                         <h6 class="card-title" style="color: darkred">Actividades Técnico-pedagógicas</h6>
-                        <p class="card-text">Nuestros estudiantes al término de su preparación tendrán la capacidad de ser pensadores autónomos y críticos capaces de tomar decisiones en diferentes circunstancias profesionales.</p><br>
-                        <a href="https://escuela.websanjudas.com/" class="btn btn-primary">Saber más</a>
+                        <p class="card-text">Nuestros estudiantes al término de su preparación tendrán la capacidad de ser pensadores autónomos y críticos capaces de tomar decisiones en diferentes circunstancias profesionales.</p>
+                        <a href="https://escuela.websanjudas.com/" class="btn btn-ccc mt-auto">Saber más</a>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card">
-                <div class="card-content">
+            <div class="col">
+                <div class="card shadow h-100">
                     <img src="recursos/img/ca2.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Bachillerato Tecnico Industrial</h5>
                         <h6 class="card-title" style="color: darkred">Electromecánica Automotriz</h6>
                         <p class="card-text">Mediante la aplicación del modelo pedagógico Constructivista-Social nuestros estudiantes estarán en capacidad de realizar operaciones profesionales inmersas en los principios establecidos en el perfil de salida del Bachiller Tecnico.</p>
-                        <a href="#" class="btn btn-primary">Saber más</a>
+                        <a href="#" class="btn btn-ccc mt-auto">Saber más</a>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card">
-                <div class="card-content">
+            <div class="col">
+                <div class="card shadow h-100">
                     <img src="recursos/img/ca1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Bachillerato Técnico TICs</h5>
                         <h6 class="card-title" style="color: darkred">Informática</h6>
                         <p class="card-text">Gracias a los paradigmas educativos del nuevo siglo y a la aplicación de modelos pedagógicos, los estudiantes TICs estarán en capacidad de Optimizar el rendimiento de procesos comerciales, administrativos y de servicios.</p>
-                        <a href="#" class="btn btn-primary">Saber más</a>
+                        <a href="#" class="btn btn-ccc mt-auto">Saber más</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div><br>
-    </div>
-    </div>
 </div>
+
+<hr>
     
     
 <div class="container mt-4">
@@ -500,20 +566,25 @@ max-height: 64px;
     </div>
 </div>
 
-
+<hr>
 
 <div class="row bg-dark" id="pie" >
+ 
     <div class="col-md-4" id="direccion">
-       <div class="alert alert-light" style="height:100%;color:#000;" role="alert">
-  <span id="iconoF" style="float:left;margin-right:5px;"></span> 
-        <h4 style="font-size:2em;">Contáctenos</h4><hr style="margin-top:-5px;">
-        <p style="font-size:1em;">Av. Casuarina, Coop. Sergio Toral 1, Mz. 3236, Diagonal a Hogar de Cristo</p>
-        <b><span id="iconoF"></span>Teléfonos:</b>
-        <p style="font-size:1em;">(+593) 993 825 777<br>(+593) 990 225 533</p>
-        <b><span id="iconoF"></span>Email:</b>
-        <p style="font-size:1em;">info@websanjudas.com<br>ufasjt@hotmail.com</p>
-        
- </div></div>
+    <div class="card bg-light" style="height:100%;">
+        <div class="card-body">
+            <h4 class="card-title"><i class="fas fa-map-marker-alt"></i> Contáctenos</h4>
+            <hr>
+            <p class="card-text"><i class="fas fa-home"></i> Av. Casuarina, Coop. Sergio Toral 1, Mz. 3236, Diagonal a Hogar de Cristo</p>
+            <b><p class="card-text"><i class="fas fa-phone"></i> Teléfonos:</b></p>
+            <p class="card-text">(+593) 993 825 777<br>(+593) 990 225 533</p>
+            <b><p class="card-text"><i class="fas fa-envelope"></i> Email:</b></p>
+            <p class="card-text">info@websanjudas.com<br>ufasjt@hotmail.com</p>
+        </div>
+    </div>
+</div>
+
+    
     <div class="col-md-4" id="mapa">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2819.2987990292877!2d-79.97829953321873!3d-2.1187801673171944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d73313fa96939%3A0xabafa25d13218f5c!2sColegio+San+Judas+Tadeo!5e0!3m2!1ses!2sec!4v1540592546666" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe></div>
     
@@ -580,6 +651,49 @@ max-height: 64px;
             interval: 5000,
             wrap: true 
         })
+        
+        document.addEventListener("DOMContentLoaded", function() {
+    // Seleccionar el elemento a animar
+    var bienvenidos = document.getElementById('bienvenidos');
+
+    // Función que se activará cuando el elemento sea visible
+    function animarElemento(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Agregar clase para iniciar la animación
+                bienvenidos.classList.add('animate__slideInRight');
+                // Dejar de observar el elemento después de la animación
+                observer.unobserve(entry.target);
+            }
+        });
+    }
+
+    // Configurar IntersectionObserver
+    var observer = new IntersectionObserver(animarElemento, { threshold: 0.5 });
+    // Observar el elemento
+    observer.observe(bienvenidos);
+});
+        
+        document.addEventListener("DOMContentLoaded", function() {
+    // Seleccionar todos los cards
+    var cards = document.querySelectorAll('.card');
+
+    // Función que se activará cuando un card sea visible
+    function animarCard(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Agregar clase para iniciar la animación
+                entry.target.classList.add('animate__zoomIn');
+                // Dejar de observar el card después de la animación
+                observer.unobserve(entry.target);
+            }
+        });
+    }
+
+    // Configurar IntersectionObserver para cada card
+    var observer = new IntersectionObserver(animarCard, { threshold: 0.5 });
+    cards.forEach(card => observer.observe(card));
+});
         
          $('.navbar-nav>li>a').on('click', function(){
             $('.navbar-collapse').collapse('hide');
