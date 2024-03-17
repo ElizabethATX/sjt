@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colegio Técnico San Judas Tadeo</title>
+    <link rel="icon" type="image/png" href="https://www.websanjudas.com/images/logo.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    
+     <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-..." crossorigin="anonymous">
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        
+       
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: #f8f9fa;
+            padding: 40px 0;
+        }
+        .carousel-item img {
+            width: 100%;
+            height: 420px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 2px solid #000;
+        }
+        .card-img-top{
+            width: 100%;
+            height: 220px;
+            object-fit: cover;  
+        }
+        .bg-primary {
+            --bs-bg-opacity: 1;
+            background-color: rgb(51 0 14) !important;
+            border-radius: 10px;
+            border: 2px solid #000;
+        }
+        
+        .carousel-container-item .carousel-item img{
+            width: 100%;
+            height: 230px;
+            object-fit: cover;   
+        }
+        .bg-info {
+            --bs-bg-opacity: 1;
+            background-color: rgb(73 4 25) !important;
+        }
+
+        body{
+            background-image: linear-gradient(to top, #aaaaaa, #ffffff, #ffffff);
+            background-attachment: fixed;
+            font-family: 'Ubuntu', sans-serif;
+            max-width:1280px;
+            margin: 0 auto;
+        }
+        #blogo{
+            width:170px;   
+            margin:0 20px 0 18px;
+
+        }
+        #logo{
+            width:120px;
+            margin:7px 0 0 -168px;
+
+
+        }
+        #logonav{
+            height:120px;
+            margin:-20px 0 0 -172px;
+
+
+        }
+        #titulo{
+            margin:-100px 0 0 190px;
+            font-weight:bold;
+            color:#700;
+            z-index: 4000;
+            text-shadow: 0 1px 0.5px #000;
+
+        }
+        #linea{
+            width:265px;
+            border:1px solid #000;
+            color:#000 ;
+           margin:-2px 0 0 190px;
+        }
+        #slogan{
+            margin:-3px 0 0 190px;
+            font-family:"Calibri";
+            font-weight:bold;
+
+        }
+        #bEst{
+             margin:-100px 0 0 0;
+            float:right;
+            width:350px;
+            z-index: 1000;
+        }
+        #Est{
+            margin:-83.5px -300px 0 0;
+            z-index: 2000;
+            float:right;
+        }
+        #banner{
+    background-color: rgba(52,58,64,1);
+    }
+
+    #robot{width:200px;position:absolute;z-index:1000;}
+    #rob2{
+        width:110px;
+        position:absolute;
+        z-index:1000;
+        right:0;
+        display: none;
+    }
+    #bienv{margin:15px 0 15px 140px;padding:15px 15px 15px 55px;}
+    p{text-align: justify;}
+        
+      
+        .col-md-4:hover  {
+        transform: scale(1.1);
+        transition: transform 0.3s ease;
+    }
+        
+        
+.vertical-menu {
+    width: 100%; 
+}
+
+
+#acordeon{
+    margin:-3px 0 0 0;
+    background-color: rgba(34,34,34,1);
+    height: 300px;
+
+}
+
+#pie{
+    padding:10px;
+    margin:0;
+     height:auto;
+
+}
+#direccion,#mapa,#redes{
+ 
+    padding:10px;
+      height:auto;
+}
+
+
+#conteImg{
+  text-align: center;
+right:0;
+left:0;
+
+}
+
+#conteImg img{
+max-height: 64px;
+    margin:3px;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+   
+}
+#conteImg img:hover{
+    margin-top:-5px;
+    -webkit-transform: scale(1.3); 
+    -moz-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    transform: scale(1.3);
+   }
+
+.bg-vino{
+    background: #700;
+}
+.text-vino{
+    color:#700;
+}
+
+@media only screen and (max-width: 748px) {
+  
+#Est{  display: none;}
+        #robot{display: none}
+    #rob2{display: block}
+    #bienv{margin:0;padding:15px;margin-top:15px;}
+}
+    
+@media only screen and (max-width: 460px) {
+    #top{height: 160px;}
+    #titulo{margin:0;text-align: center;}
+    #linea{margin:0 auto;}
+    #slogan{margin:0;text-align: center;;}
+    #bEst{margin:-150px auto 0 auto;float:none;z-index:0;opacity: 0.5;width:100%;}
+    #logo{ margin:10px 40%;width:20%;}
+    #blogo{display:none;}
+
+}
+        .text-muted{
+            color: white !important;
+            text-align: center;
+        }
+        
+           #telf{
+    position:fixed;
+    right:-169px;
+    bottom:105px;
+    text-align:right;
+    z-index:2000;
+    
+    -webkit-transition: all .3s ease-in-out;
+-moz-transition: all .3s ease-in-out;
+-o-transition: all .3s ease-in-out;
+-ms-transition: all .3s ease-in-out;
+}
+#telf:hover{
+-webkit-transform:translate(-169px,0px);
+-moz-transform:translate(-169px,0px);
+-ms-transform:translate(-169px,0px);
+-o-transform:translate(-169px,0px);
+ transform:translate(-169px,0px);
+}    
+    #wspl{
+    position:fixed;
+    right:-165px;
+    bottom:55px;
+    text-align:right;
+    z-index:2000;
+    
+    -webkit-transition: all .3s ease-in-out;
+-moz-transition: all .3s ease-in-out;
+-o-transition: all .3s ease-in-out;
+-ms-transition: all .3s ease-in-out;
+}
+#wspl:hover{
+-webkit-transform:translate(-165px,0px);
+-moz-transform:translate(-165px,0px);
+-ms-transform:translate(-165px,0px);
+-o-transform:translate(-165px,0px);
+ transform:translate(-165px,0px);
+}
+#fbpl{
+    position:fixed;
+    right:-158px;
+    bottom:5px;
+    text-align:right;
+    z-index:2000;
+    
+    -webkit-transition: all .3s ease-in-out;
+-moz-transition: all .3s ease-in-out;
+-o-transition: all .3s ease-in-out;
+-ms-transition: all .3s ease-in-out;
+}
+#fbpl:hover{
+-webkit-transform:translate(-158px,0px);
+-moz-transform:translate(-158px,0px);
+-ms-transform:translate(-158px,0px);
+-o-transform:translate(-158px,0px);
+ transform:translate(-158px,0px);
+}
+        
+        .navbar{
+            border-radius: 20px;
+            width: 100;
+        }
+        .todo1{
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v19.0&appId=326661504705959" nonce="uJnyi6Wn"></script>
+    
+    <div class="btn-group" id="telf" onclick="location.href='tel:+593993825777'">
+    <button class="btn btn-danger"><i class="fas fa-phone f-32"></i></button>
+    <button class="btn btn-outline-danger bg-light text-dark" >(+593) 993 825 777</button>
+</div>
+<div class="btn-group" id="wspl" onclick="location.href='https://wa.me/593993825777?text=Hola, les escribo desde su página web. ¿Podrian ayudarme con más información?'">
+    <button class="btn btn-success"><i class="fab fa-whatsapp f-32"></i></button>
+    <button class="btn btn-outline-success bg-light text-dark" >(+593) 993 825 777</button>
+</div>
+<div class="btn-group" id="fbpl" onclick="location.href='https://www.facebook.com/tecnicosanjudastadeo/'">
+    <button class="btn btn-primary"><i class="fab fa-facebook f-32"></i></button>
+    <button class="btn btn-outline-primary bg-light text-dark" >@tecnicosanjudas</button>
+</div>
+    
+    <div class="container mt-4">
+    <div class="row">
+        <div class="col-12">
+            <img id="blogo" src="recursos/img/eje2.png">
+            <img id="logo" src="recursos/img/logo2.png">
+            <h2 id="titulo">San Judas Tadeo</h2>
+            <hr id="linea">
+            <h5 id="slogan">UNIDAD EDUCATIVA PARTICULAR</h5>
+            <img id="bEst" src="recursos/img/eje1.png">
+            <img id="Est" src="recursos/img/chicos.png" width="280px" height="140px" > 
+        </div>
+    </div>
+</div>
+  
+     <div class="container">
+        <nav class="navbar navbar-expand-md sticky-top navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="https://www.websanjudas.com/images/logo.png" alt="San Judas Tadeo Logo" width="40" height="40" class="d-inline-block align-text-top">
+                    <span class="ms-2">Colegio Técnico San Judas Tadeo</span>
+                </a>
+                <!-- Agrega el botón del toggler con la clase "navbar-toggler" -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#" onclick="closeNavbar()">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="closeNavbar()">Institución</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="closeNavbar()">Oferta Educativa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="closeNavbar()">Actividades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="closeNavbar()">Contactos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+<style>
+    /* Ajustar el tamaño del texto en el navbar */
+    @media (max-width: 575.98px) {
+        .navbar-brand span {
+            font-size: 12px;
+        }
+    }
+</style>
+
+    <br>
+    
+<div class="container-fluid">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="recursos/img/c1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="recursos/img/c2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                    <img src="recursos/img/c3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="recursos/img/c4.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="recursos/img/c5.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="recursos/img/c6.jpg" class="d-block w-100" alt="...">
+                </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row p-4" id="bienvenidos">
+  
+    <div class="col-md-12">
+        <img id="robot" src="https://www.websanjudas.com/images/robotiz.png" >
+        <img id="rob2" src="ihttps://www.websanjudas.com/mages/robotiz3.png" >
+        <div class="alert alert-primary" role="alert" id="bienv">
+            
+        <h3>¡Bienvenidos!</h3>
+        <p>Nosotros, como Unidad Educativa formando Bachilleres Técnicos, tomamos en cuenta los intereses socio-económicos del sector, apoyados en un proceso educativo innovador, consideramos son motivos suficientes para sentirnos orgullosos de nuestros logros en el campo educacional y formativo de la juventud que por varios años han pasado por nuestras aulas. Jugamos un rol importante en la conducción de elementos humanos que están bajo nuestra responsabilidad y aseguramos la calidad de la enseñanza que consideramos es una retribución al grado de confianza brindada por las madres, padres de familia y representantes.</p>
+            
+        </div>
+    </div>
+</div>
+
+    
+    <div class="container mt-4">
+    <!-- Card de fondo -->
+    <div class="card bg-primary text-white w-100">
+        <div class="card-body">
+            <h3 class="card-title" style="text-align: center" >Oferta Educativa</h3>
+            <h6 class="card-text" style="text-align: center">La educación es la llave que abre todas las puertas del conocimiento.</h6>
+        
+    
+
+    <!-- Cards con imagen, información y botón -->
+    <div class="container mt-4 w-100">
+    <div class="row mt-4" >
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-content">
+                    <img src="recursos/img/ca3.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Educación Básica Superior</h5>
+                        <h6 class="card-title" style="color: darkred">Actividades Técnico-pedagógicas</h6>
+                        <p class="card-text">Nuestros estudiantes al término de su preparación tendrán la capacidad de ser pensadores autónomos y críticos capaces de tomar decisiones en diferentes circunstancias profesionales.</p><br>
+                        <a href="https://escuela.websanjudas.com/" class="btn btn-primary">Saber más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-content">
+                    <img src="recursos/img/ca2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Bachillerato Tecnico Industrial</h5>
+                        <h6 class="card-title" style="color: darkred">Electromecánica Automotriz</h6>
+                        <p class="card-text">Mediante la aplicación del modelo pedagógico Constructivista-Social nuestros estudiantes estarán en capacidad de realizar operaciones profesionales inmersas en los principios establecidos en el perfil de salida del Bachiller Tecnico.</p>
+                        <a href="#" class="btn btn-primary">Saber más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-content">
+                    <img src="recursos/img/ca1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Bachillerato Técnico TICs</h5>
+                        <h6 class="card-title" style="color: darkred">Informática</h6>
+                        <p class="card-text">Gracias a los paradigmas educativos del nuevo siglo y a la aplicación de modelos pedagógicos, los estudiantes TICs estarán en capacidad de Optimizar el rendimiento de procesos comerciales, administrativos y de servicios.</p>
+                        <a href="#" class="btn btn-primary">Saber más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><br>
+    </div>
+    </div>
+</div>
+    
+    
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Educacion inicial - Educacion Básica</b></h5>
+                    <p class="card-text">Preparar integralmente al niño en ámbitos de aprendizaje de utilidad general, de cultura, valores y de especialidad, en un ámbito de interés, relacionado con el mundo real en que se desenvuelven, para formar una persona íntegra, integral e integrada, con sus propias características, afectos, fortalezas e intereses.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="carousel-container-item">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="recursos/img/pe1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="recursos/img/pe2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="recursos/img/pe3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div><br>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="row bg-dark" id="pie" >
+    <div class="col-md-4" id="direccion">
+       <div class="alert alert-light" style="height:100%;color:#000;" role="alert">
+  <span id="iconoF" style="float:left;margin-right:5px;"></span> 
+        <h4 style="font-size:2em;">Contáctenos</h4><hr style="margin-top:-5px;">
+        <p style="font-size:1em;">Av. Casuarina, Coop. Sergio Toral 1, Mz. 3236, Diagonal a Hogar de Cristo</p>
+        <b><span id="iconoF"></span>Teléfonos:</b>
+        <p style="font-size:1em;">(+593) 993 825 777<br>(+593) 990 225 533</p>
+        <b><span id="iconoF"></span>Email:</b>
+        <p style="font-size:1em;">info@websanjudas.com<br>ufasjt@hotmail.com</p>
+        
+ </div></div>
+    <div class="col-md-4" id="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2819.2987990292877!2d-79.97829953321873!3d-2.1187801673171944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d73313fa96939%3A0xabafa25d13218f5c!2sColegio+San+Judas+Tadeo!5e0!3m2!1ses!2sec!4v1540592546666" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+    
+    <div class="col-md-4" id="redes">
+ 
+<div class="fb-page" data-href="https://www.facebook.com/tecnicosanjudastadeo" data-tabs="timeline,messages" data-width="400" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/tecnicosanjudastadeo" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/tecnicosanjudastadeo">Unidad Educativa Particular San Judas Tadeo</a></blockquote></div>
+    </div>
+    
+
+
+</div>
+
+
+
+
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Enlaces útiles</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Institución</a></li>
+                        <li><a href="#">Oferta Educativa</a></li>
+                        <li><a href="#">Actividades</a></li>
+                        <li><a href="#">Contactos</a></li>
+                    </ul>
+                </div>
+               <div class="col-md-4">
+                <img src="recursos/img/logo.png" class="d-block mx-auto" alt="...">
+                </div>
+
+                <div class="col-md-4">
+                    <h5>Síguenos</h5>
+                    <ul class="list-unstyled list-inline">
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-facebook fa-lg"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-lg"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-instagram fa-lg"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin fa-lg"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p class="text-muted">&copy; 2024 Colegio Técnico San Judas Tadeo. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Bootstrap Bundle with Popper -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Script del carrusel -->
+    <script>
+        var myCarousel = document.querySelector('#carouselExampleSlidesOnly')
+        var carousel = new bootstrap.Carousel(myCarousel, {
+            interval: 5000,
+            wrap: true 
+        })
+        
+         $('.navbar-nav>li>a').on('click', function(){
+            $('.navbar-collapse').collapse('hide');
+        });
+
+        // Cerrar el menú al hacer clic en el icono del toggler
+        $('.navbar-toggler').on('click', function(){
+            $('.navbar-collapse').collapse('toggle'); // Cambiar a 'toggle' en lugar de 'hide'
+        });
+    </script>
+    
+</body>
+
+</html>
