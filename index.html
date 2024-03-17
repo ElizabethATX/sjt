@@ -29,339 +29,10 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
+    <link href="recursos/estilos.css" rel="stylesheet" type="text/css"/>
     
-    <style>
-        
-       
-        body {
-            background-color: #f8f9fa;
-        }
-
-        .footer {
-            background-color: #343a40;
-            color: #f8f9fa;
-            padding: 40px 0;
-        }
-        .carousel-item img {
-            width: 100%;
-            height: 420px;
-            object-fit: cover;
-            border-radius: 10px;
-            border: 2px solid #000;
-        }
-        .card-img-top{
-            width: 100%;
-            height: 220px;
-            object-fit: cover;  
-        }
-        .bg-primary {
-            --bs-bg-opacity: 1;
-            background-color: rgb(51 0 14) !important;
-            border-radius: 10px;
-            border: 2px solid #000;
-        }
-        
-        .carousel-container-item .carousel-item img{
-            width: 100%;
-            height: 230px;
-            object-fit: cover;   
-        }
-        .bg-info {
-            --bs-bg-opacity: 1;
-            background-color: rgb(73 4 25) !important;
-        }
-
-        body{
-            background-image: linear-gradient(to top, #aaaaaa, #ffffff, #ffffff);
-            background-attachment: fixed;
-            font-family: 'Ubuntu', sans-serif;
-            max-width:1280px;
-            margin: 0 auto;
-        }
-        #blogo{
-            width:170px;   
-            margin:0 20px 0 18px;
-
-        }
-        #logo{
-            width:120px;
-            margin:7px 0 0 -168px;
-
-
-        }
-        #logonav{
-            height:120px;
-            margin:-20px 0 0 -172px;
-
-
-        }
-        #titulo{
-            margin:-100px 0 0 190px;
-            font-weight:bold;
-            color:#700;
-            z-index: 4000;
-            text-shadow: 0 1px 0.5px #000;
-
-        }
-        #linea{
-            width:265px;
-            border:1px solid #000;
-            color:#000 ;
-           margin:-2px 0 0 190px;
-        }
-        #slogan{
-            margin:-3px 0 0 190px;
-            font-family:"Calibri";
-            font-weight:bold;
-
-        }
-        #bEst{
-             margin:-100px 0 0 0;
-            float:right;
-            width:350px;
-            z-index: 1000;
-        }
-        #Est{
-            margin:-83.5px -300px 0 0;
-            z-index: 2000;
-            float:right;
-        }
-        #banner{
-    background-color: rgba(52,58,64,1);
-    }
-
-    #robot{width:200px;position:absolute;z-index:1000;}
-    #rob2{
-        width:110px;
-        position:absolute;
-        z-index:1000;
-        right:0;
-        display: none;
-    }
-    #bienv{margin:15px 0 15px 140px;padding:15px 15px 15px 55px;}
-    p{text-align: justify;}
-        
-      
-        .col-md-4:hover  {
-        transform: scale(1.1);
-        transition: transform 0.3s ease;
-    }
-        
-        
-.vertical-menu {
-    width: 100%; 
-}
-
-
-#acordeon{
-    margin:-3px 0 0 0;
-    background-color: rgba(34,34,34,1);
-    height: 300px;
-
-}
-
-#pie{
-    padding:10px;
-    margin:0;
-     height:auto;
-
-}
-#direccion,#mapa,#redes{
- 
-    padding:10px;
-      height:auto;
-}
-
-
-#conteImg{
-  text-align: center;
-right:0;
-left:0;
-
-}
-
-#conteImg img{
-max-height: 64px;
-    margin:3px;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    -ms-transition: all .2s ease-in-out;
-   
-}
-#conteImg img:hover{
-    margin-top:-5px;
-    -webkit-transform: scale(1.3); 
-    -moz-transform: scale(1.3);
-    -o-transform: scale(1.3);
-    transform: scale(1.3);
-   }
-
-.bg-vino{
-    background: #700;
-}
-.text-vino{
-    color:#700;
-}
-
-@media only screen and (max-width: 748px) {
-  
-#Est{  display: none;}
-        #robot{display: none}
-    #rob2{display: block}
-    #bienv{margin:0;padding:15px;margin-top:15px;}
-}
     
-@media only screen and (max-width: 460px) {
-    #top{height: 160px;}
-    #titulo{margin:0;text-align: center;}
-    #linea{margin:0 auto;}
-    #slogan{margin:0;text-align: center;;}
-    #bEst{margin:-150px auto 0 auto;float:none;z-index:0;opacity: 0.5;width:100%;}
-    #logo{ margin:10px 40%;width:20%;}
-    #blogo{display:none;}
-
-}
-        .text-muted{
-            color: white !important;
-            text-align: center;
-        }
-        
-           #telf{
-    position:fixed;
-    right:-169px;
-    bottom:105px;
-    text-align:right;
-    z-index:2000;
     
-    -webkit-transition: all .3s ease-in-out;
--moz-transition: all .3s ease-in-out;
--o-transition: all .3s ease-in-out;
--ms-transition: all .3s ease-in-out;
-}
-#telf:hover{
--webkit-transform:translate(-169px,0px);
--moz-transform:translate(-169px,0px);
--ms-transform:translate(-169px,0px);
--o-transform:translate(-169px,0px);
- transform:translate(-169px,0px);
-}    
-    #wspl{
-    position:fixed;
-    right:-165px;
-    bottom:55px;
-    text-align:right;
-    z-index:2000;
-    
-    -webkit-transition: all .3s ease-in-out;
--moz-transition: all .3s ease-in-out;
--o-transition: all .3s ease-in-out;
--ms-transition: all .3s ease-in-out;
-}
-#wspl:hover{
--webkit-transform:translate(-165px,0px);
--moz-transform:translate(-165px,0px);
--ms-transform:translate(-165px,0px);
--o-transform:translate(-165px,0px);
- transform:translate(-165px,0px);
-}
-#fbpl{
-    position:fixed;
-    right:-158px;
-    bottom:5px;
-    text-align:right;
-    z-index:2000;
-    
-    -webkit-transition: all .3s ease-in-out;
--moz-transition: all .3s ease-in-out;
--o-transition: all .3s ease-in-out;
--ms-transition: all .3s ease-in-out;
-}
-#fbpl:hover{
--webkit-transform:translate(-158px,0px);
--moz-transform:translate(-158px,0px);
--ms-transform:translate(-158px,0px);
--o-transform:translate(-158px,0px);
- transform:translate(-158px,0px);
-}
-        
-        .navbar{
-            border-radius: 20px;
-            width: 100;
-        }
-        .todo1{
-            width: 100%;
-        }
-        
-
-        
-        .animate__slideInRight {
-    animation: animate__slideInRight 1s forwards;
-}
-
-@keyframes animate__slideInRight {
-    from {
-        opacity: 0;
-        transform: translateX(100%);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-        .animate__zoomIn {
-    animation: animate__zoomIn 1s forwards;
-}
-
-@keyframes animate__zoomIn {
-    from {
-        opacity: 0;
-        transform: scale(0.5);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
-.card {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease; 
-}
-
-.card:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
-}
-        
-.card-body {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    transition: box-shadow 0.3s ease; 
-}
-
-.card-body:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
-}
-
-        
-.btn-ccc {
-    background-color: rgb(51 0 14) !important;
-    border-color: #000; 
-    color: #fff; 
-}
-
-.btn-ccc:hover {
-    background-color: rgb(41 13 21) !important; 
-    border-color: #000; 
-    color: #fff;
-}
-hr {
-    border-top: 8px solid rgb(41 13 21); 
-    margin: 20px 0; 
-}
-
-
-    </style>
 </head>
 
 <body>
@@ -396,14 +67,13 @@ hr {
     </div>
 </div>
   
-     <div class="container">
-        <nav class="navbar navbar-expand-md sticky-top navbar-dark bg-dark">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand d-flex align-items-center" href="#">
                     <img src="https://www.websanjudas.com/images/logo.png" alt="San Judas Tadeo Logo" width="40" height="40" class="d-inline-block align-text-top">
                     <span class="ms-2">Colegio Técnico San Judas Tadeo</span>
                 </a>
-                <!-- Agrega el botón del toggler con la clase "navbar-toggler" -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -412,29 +82,30 @@ hr {
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#" onclick="closeNavbar()"><i class="fas fa-home"></i> Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="index.html"><i class="fas fa-home"></i> Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" onclick="closeNavbar()"><i class="fas fa-school"></i> Institución</a>
+                            <a class="nav-link" href="institucion.html"><i class="fas fa-school"></i> Institución</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" onclick="closeNavbar()"><i class="fas fa-graduation-cap"></i> Oferta Educativa</a>
+                            <a class="nav-link" href="index.html#ofertas">
+                                <i class="fas fa-graduation-cap"></i> Oferta Educativa
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" onclick="closeNavbar()"><i class="fas fa-calendar-alt"></i> Actividades</a>
+                            <a class="nav-link" href="#"><i class="fas fa-calendar-alt"></i> Actividades</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" onclick="closeNavbar()"><i class="fas fa-address-book"></i> Contactos</a>
+                            <a class="nav-link" href="#"><i class="fas fa-address-book"></i> Contactos</a>
                         </li>
                     </ul>
                 </div>
-
             </div>
         </nav>
     </div>
 
 <style>
-    /* Ajustar el tamaño del texto en el navbar */
+   
     @media (max-width: 575.98px) {
         .navbar-brand span {
             font-size: 12px;
@@ -483,7 +154,7 @@ hr {
 </div>
 
 
-
+<section id="ofertas">   
   <div class="container-fluid mt-4">
     <!-- Card de fondo -->
     <div class="card bg-primary text-white">
@@ -502,8 +173,10 @@ hr {
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Educación Básica Superior</h5>
                         <h6 class="card-title" style="color: darkred">Actividades Técnico-pedagógicas</h6>
-                        <p class="card-text">Nuestros estudiantes al término de su preparación tendrán la capacidad de ser pensadores autónomos y críticos capaces de tomar decisiones en diferentes circunstancias profesionales.</p>
-                        <a href="https://escuela.websanjudas.com/" class="btn btn-ccc mt-auto">Saber más</a>
+                        <p class="card-text">
+                            Al culminar su educación básica, nuestros estudiantes habrán adquirido las habilidades necesarias para convertirse en pensadores autónomos y críticos. A lo largo de su formación, se les habrá proporcionado un entorno de aprendizaje que fomente la reflexión y el análisis, permitiéndoles cuestionar, evaluar y tomar decisiones de manera informada en una variedad de contextos profesionales.
+                        </p>
+                        <a href="https://escuela.websanjudas.com/" class="btn btn-ccc mt-auto"><i class="fas fa-school"></i> Saber más <i class="fas fa-school"></i></a>
                     </div>
                 </div>
             </div>
@@ -513,8 +186,8 @@ hr {
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Bachillerato Tecnico Industrial</h5>
                         <h6 class="card-title" style="color: darkred">Electromecánica Automotriz</h6>
-                        <p class="card-text">Mediante la aplicación del modelo pedagógico Constructivista-Social nuestros estudiantes estarán en capacidad de realizar operaciones profesionales inmersas en los principios establecidos en el perfil de salida del Bachiller Tecnico.</p>
-                        <a href="#" class="btn btn-ccc mt-auto">Saber más</a>
+                        <p class="card-text">Mediante el enfoque Constructivista-Social, nuestros estudiantes de electromecánica automotriz adquieren habilidades profesionales alineadas con el perfil de salida del Bachiller Técnico. Este modelo pedagógico fomenta un aprendizaje activo y participativo, donde se integran conocimientos teóricos y prácticos para preparar a los estudiantes para desafíos laborales reales en la industria automotriz.</p>
+                        <a href="mecanica-automotriz.html" class="btn btn-ccc mt-auto"><i class="fas fa-cogs"></i> Saber más <i class="fas fa-cogs"></i></a>
                     </div>
                 </div>
             </div>
@@ -524,15 +197,15 @@ hr {
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Bachillerato Técnico TICs</h5>
                         <h6 class="card-title" style="color: darkred">Informática</h6>
-                        <p class="card-text">Gracias a los paradigmas educativos del nuevo siglo y a la aplicación de modelos pedagógicos, los estudiantes TICs estarán en capacidad de Optimizar el rendimiento de procesos comerciales, administrativos y de servicios.</p>
-                        <a href="#" class="btn btn-ccc mt-auto">Saber más</a>
+                        <p class="card-text">Los estudiantes de Tecnologías de la Información y la Comunicación (TIC) desarrollarán la capacidad de optimizar el rendimiento de procesos comerciales, administrativos y de servicios. Este enfoque educativo moderno integra teoría y práctica, permitiendo a los estudiantes no solo adquirir conocimientos, sino también aplicarlos en contextos empresariales y de servicios. </p>
+                        <a href="informatica.html" class="btn btn-ccc mt-auto"><i class="fas fa-laptop"></i> Saber más <i class="fas fa-laptop"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
+</section>
 <hr>
     
     
@@ -606,11 +279,10 @@ hr {
                 <div class="col-md-4">
                     <h5>Enlaces útiles</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Institución</a></li>
-                        <li><a href="#">Oferta Educativa</a></li>
-                        <li><a href="#">Actividades</a></li>
-                        <li><a href="#">Contactos</a></li>
+                        <li><a href="institucion.html">Institución</a></li>
+                        <li><a href="index.html#ofertas">Oferta Educativa</a></li>
+                        <li><a href="actividades.html">Actividades</a></li>
+                        <li><a href="contacto.html">Contactos</a></li>
                     </ul>
                 </div>
                <div class="col-md-4">
@@ -618,9 +290,9 @@ hr {
                 </div>
 
                 <div class="col-md-4">
-                    <h5>Síguenos</h5>
+                    <h5> <b>Síguenos</b></h5>
                     <ul class="list-unstyled list-inline">
-                        <li class="list-inline-item"><a href="#"><i class="fab fa-facebook fa-lg"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.facebook.com/tecnicosanjudastadeo"><i class="fab fa-facebook fa-lg"></i></a></li>
                         <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-lg"></i></a></li>
                         <li class="list-inline-item"><a href="#"><i class="fab fa-instagram fa-lg"></i></a></li>
                         <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin fa-lg"></i></a></li>
@@ -695,15 +367,42 @@ hr {
     cards.forEach(card => observer.observe(card));
 });
         
-         $('.navbar-nav>li>a').on('click', function(){
+         window.addEventListener("scroll", function() {
+        var navbar = document.querySelector(".navbar");
+        if (window.scrollY > navbar.offsetTop) {
+            navbar.classList.add("fixed-top");
+        } else {
+            navbar.classList.remove("fixed-top");
+        }
+    });
+        
+    </script>
+
+    <script>
+
+        $('.nav-link').on('click', function() {
             $('.navbar-collapse').collapse('hide');
         });
-
-        $('.navbar-toggler').on('click', function(){
-            $('.navbar-collapse').collapse('toggle');
+        $('.navbar-toggler-icon').on('click', function() {
+            $('.navbar-collapse').collapse('hide');
         });
     </script>
-    
+
+
+     <script>
+        $(document).ready(function() {
+            var prevScrollpos = window.pageYOffset;
+            $(window).scroll(function() {
+                var currentScrollPos = window.pageYOffset;
+                if (prevScrollpos > currentScrollPos) {
+                    $('.navbar').removeClass('navbar-scrolled');
+                } else {
+                    $('.navbar').addClass('navbar-scrolled');
+                }
+                prevScrollpos = currentScrollPos;
+            });
+        });
+    </script>
 </body>
 
 </html>
