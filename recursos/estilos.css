@@ -2,6 +2,12 @@
             background-color: #f8f9fa;
             margin-top: 56px;
         }
+         canvas {
+                position: absolute;
+                top: 0;
+                left: 0;
+                pointer-events: none;
+            }
 
         .footer {
             background-color: #343a40;
